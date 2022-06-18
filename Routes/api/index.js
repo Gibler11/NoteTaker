@@ -1,5 +1,5 @@
-const express = require('express').Router();
-const readAndWrite = requre('..../db/f');
+const express = require('express').Router()
+
 const app = express();
 const notesRouter = require('/notes');
 

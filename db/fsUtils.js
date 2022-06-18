@@ -1,6 +1,6 @@
 const fs = require('fs');
 const util = require('util');
-const readFile = util.promisify(fs.readFile)
+const readFromFile = util.promisify(fs.readFile)
 
 /**
  * Function to push objects into array on database file given content and file path
@@ -60,4 +60,4 @@ const deleteNote = (file, noteId) => {
 function writeToFile(fileName, content) {
     fs.writeFile(fileName, JSON.stringify(content, null, 2), (err) => err ? console.error(err) : console.info(`\nData written to ${fileName}`))
 }
-module.exports = { readAndWriteFile, readFile, deleteNote }
+module.exports = { readAndWriteFile, readFromFile, deleteNote }
