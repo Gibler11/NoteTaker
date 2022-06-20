@@ -2,7 +2,7 @@ const express =require('express');
 const PORT = process.env.PORT || 3001;
 const app = express();
 //const route=require('./routes');
-const api = require ('./routes/api/index');
+const api = require ('./Routes/api/index');
 const path = require('path');
 
 app.use(express.json());
