@@ -13,7 +13,7 @@ const readAndWriteFile = (content, file) => {
         if(err) {
             console.error(err)
         } else {
-            const parsedFacts = JSON.parse(facts)
+            const parsedFacts = JSON.parse(data)
             parsedFacts.push(content);
             writeToFile(file, parsedFacts)
             console.log("content")
@@ -46,7 +46,7 @@ const deleteNote = (file, noteId) => {
             console.error(err) 
         } else {
             const parsedFacts = JSON.parse(data)
-            parsedData.splice(getNoteIndex(parsedFacts, noteId),1)
+            parsedFacts.splice(getNoteIndex(parsedFacts, noteId),1)
             writeToFile(file, parsedFacts)
         }
     })
