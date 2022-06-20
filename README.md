@@ -23,3 +23,5 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 # Links
 git@github.com:Gibler11/NoteTaker.git
+https://drive.google.com/file/d/1yum4Y3OHsZM5ue6EjEqW6Cmfcw3cencd/view?usp=sharing
+https://shrouded-badlands-14606.herokuapp.com/
